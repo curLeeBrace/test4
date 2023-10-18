@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-
+//databse schema
 const AccountSchema= new mongoose.Schema({
     
             username :{
