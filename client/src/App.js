@@ -1,5 +1,5 @@
 import { CreateUser } from "./Components/CreateUser";
-import { SamplePage } from "./Components/SamplePage";
+import { UserList } from "./Components/UserList";
 import { PageNotFound } from "./Components/PageNotFound";
 
 import { Routes, Route} from "react-router-dom";
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         
         <Route path = "/" element = {<CreateUser/>}/>
-        <Route path= "/create" element = {<SamplePage/>} />
+        <Route path= "/user-list" element = {<UserList/>} />
         <Route path= "*" element = {<PageNotFound/>} />
       </Routes>
        

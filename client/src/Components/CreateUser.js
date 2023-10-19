@@ -23,11 +23,11 @@ export const CreateUser = () => {
 
     const createUser = (e) => {
         e.preventDefault();
-        axios.post('/', userData)
+        axios.post('/user', userData)
         .then(res => {
             const {sucsess} = res.data;
             if(sucsess){
-                navigate('/create')
+                navigate('/user-list')
             }
             console.log(sucsess);
 
